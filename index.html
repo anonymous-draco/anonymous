@@ -52,7 +52,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DRACO: Data-driven Embodied Agent for Closed-loop Collaborative Optimization of Robotic Perception and Manipulation</h1>
+            <h1 class="title is-1 publication-title">DRACO: 
+              Data-driven Embodied Agent for Closed-loop Collaborative Optimization of Robotic Perception and Manipulation</h1>
             <!-- 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -141,7 +142,10 @@
 </section>
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
+
+
+
+<!-- Paper method -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -149,10 +153,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Training embodied skills in real-world settings faces high costs, safety issues, and complex constraints. While training in simulators using generated data offers a cost-effective alternative, existing attempts often assume perfect perception and lack closed-loop feedback. We find that when considering perception error, these policies failed to generalize either on trained or unseen scenarios. To this end, we propose DRACO, a data-driven closed-loop framework for collaborative optimization of robotic perception and manipulation. We use a proposed PMGen module to automatically generate unlimited 3D simulation scenes, providing diverse simulated scenarios to enhance the efficiency and accuracy of skill training. DRACO also presents a novel perception-manipulation collaborative optimization module (PMO), which refines the control-based policy using a vision-based supervisor policy, forming a closed-loop system to improve task success rates and policy generalization. We first benchmark our framework on a door-opening scenario. Compared to the baseline, the results show that our framework achieves an average success rate improvement of 80.1% on the training set and 40.0% on the unseen scenes after data scaling. Moreover, we extend our framework on various tasks and result in an average success rate of 81.9%, yielding the generalization ability of our approach. We further deploy the pretrained policy by our framework on a real embodied agent to validate the sim-real transferability.          </p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+      </div>
+      <img src="static/images/method_overview.jpg" id="method_overview height="100%"> 
     </div>
   </div>
 </section>
